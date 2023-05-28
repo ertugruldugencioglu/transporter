@@ -17,14 +17,37 @@ a {
 /* ************** */
 nav{
     background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+}
+nav img{
+    width: 60px;
+    margin-left: 24px;
 }
 .nav-list{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    align-items: center;
+    gap: 24px;
     padding: 24px;
 }
+.nav-item{
+    display: flex;
+}
+.nav-item button{
+    background: none;    
+    border-style: none;
+    
+}
+.nav-item button:active {
+    transform: scale(0.95)
+}
+.nav-item img{
+    width: 20px;
+} 
 /* ************** */
 /*     footer     */
 /* ************** */
@@ -62,6 +85,9 @@ footer{
 }
 .right-text{
     text-align: right;
+}
+.center-text{
+    text-align: center;
 }
 .white{
     color: white;
@@ -132,13 +158,24 @@ footer{
     background: none;
     border-style: none none solid none;
     outline: none;
+    box-sizing:border-box;
     width: 250px;
+}
+.nav-entry{
+    border-style: none;
+}
+.nav-entry::placeholder{
+    color: rgb(250, 211, 211);
+    transition: 0.2s;
+}
+.nav-entry:focus::placeholder{
+    color: white;
 }
 .choice{
     padding: 12px;
     background: none;
     border-style: none;
-    width: 200px;
+    width: 250px;
 }
 .choice:focus,
 .choice:hover {
@@ -156,4 +193,12 @@ footer{
 /* ************** */
 .media-icon{
     width: 50px;
+}
+/* ************** */
+/*      aside     */
+/* ************** */
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
