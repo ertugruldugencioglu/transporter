@@ -1,0 +1,163 @@
+/* ************** */
+/*      tags      */
+/* ************** */
+*{
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+main{
+    min-height: calc(100vh - 67px);
+}
+a {
+    text-decoration: none;
+}
+/* ************** */
+/*     navbar     */
+/* ************** */
+nav{
+    background-color: red;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 24px;
+}
+/* ************** */
+/*     footer     */
+/* ************** */
+footer{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+}
+.footer-nav-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    text-align: center;
+}
+.footer-nav-item{
+    list-style-type: none;
+    color: white;
+}
+/* ************** */
+/*      fonts     */
+/* ************** */
+.left-text{
+    text-align: left;
+}
+.right-text{
+    text-align: right;
+}
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+.d-gray{
+    color: rgb(85, 85, 85);
+}
+.size-16{
+    font-size: 16px
+}
+.size-22{
+    font-size: 22px;
+}
+.size-28{
+    font-size: 28px;
+}
+.size-52{
+    font-size: 52px;
+}
+.header-font{
+    font-family: 'Righteous', cursive;
+}
+/* ************** */
+/*   transition   */
+/* ************** */
+.trans{
+    transition: 0.2s;
+}
+/* ************** */
+/*      links     */
+/* ************** */
+.l-gray-link{
+    color: rgb(214, 214, 214);
+}
+.l-gray-link:hover{
+    color: white;
+}
+.d-gray-link{
+    color: rgb(99, 99, 99);
+}
+.d-gray-link:hover{
+    color: black;
+}
+.l-red-link{
+    color: rgb(250, 211, 211);
+}
+.l-red-link:hover{
+    color: white;
+}
+.red-button{
+    background-color: red;
+    border-radius: 12px;
+    padding: 14px;
+    border-style: none;
+}
+.red-border-button{
+    background-color: white;
+    border-style: solid;
+    border-color: red;
+    border-radius: 12px;
+    padding: 12px;
+}
+.entry{
+    background: none;
+    border-style: none none solid none;
+    outline: none;
+    width: 250px;
+}
+.choice{
+    padding: 12px;
+    background: none;
+    border-style: none;
+    width: 200px;
+}
+.choice:focus {
+    box-shadow: rgb(168, 168, 168) -25px 0px 50px -30px inset;
+    border-color: red;
+    border-right-style: solid;
+    border-width: 5px;
+    outline: none;
+}
+.choice:hover{
+    box-shadow: rgb(168, 168, 168) -25px 0px 50px -30px inset;
+    border-color: red;
+    border-right-style: solid;
+    border-width: 5px;
+}
+.active {
+    color: white;
+}
+/* ************** */
+/*                */
+/* ************** */
+.media-icon{
+    width: 50px;
+}

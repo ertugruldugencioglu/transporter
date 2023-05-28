@@ -1,0 +1,43 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/paul-volkmer-ru9dBbfgyuw-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.915) 47vw 0px 200px 0px inset;
+}
+/* ********************** */
+.contact-ways{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: rgb(239, 239, 239);
+    padding: 24px;
+    border-radius: 24px;
+}
+.contact-ways div{
+    display: flex;
+    flex-direction: row;
+}
+.choices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    height: 172.8px;
+    padding: 0px 24px 0px 24px;
+}
+.carousel-container{
+    height: 172.8px;
+    overflow: hidden;
+}

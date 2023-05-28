@@ -1,0 +1,11 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/tri-eptaroka-mardiana-hP4ZiN1_kdk-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.915) 47vw 0px 200px 0px inset;
+}
