@@ -72,18 +72,19 @@ footer{
 .d-gray{
     color: rgb(85, 85, 85);
 }
-.size-16{
-    font-size: 16px
+.size-16 {
+    font-size: 16px;
 }
-.size-22{
+.size-22 {
     font-size: 22px;
 }
-.size-28{
+.size-28 {
     font-size: 28px;
 }
-.size-52{
+.size-52 {
     font-size: 52px;
 }
+
 .header-font{
     font-family: 'Righteous', cursive;
 }
@@ -139,18 +140,13 @@ footer{
     border-style: none;
     width: 200px;
 }
-.choice:focus {
+.choice:focus,
+.choice:hover {
     box-shadow: rgb(168, 168, 168) -25px 0px 50px -30px inset;
     border-color: red;
     border-right-style: solid;
     border-width: 5px;
     outline: none;
-}
-.choice:hover{
-    box-shadow: rgb(168, 168, 168) -25px 0px 50px -30px inset;
-    border-color: red;
-    border-right-style: solid;
-    border-width: 5px;
 }
 .active {
     color: white;
