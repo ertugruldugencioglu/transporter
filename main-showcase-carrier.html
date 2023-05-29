@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Righteous&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/general.css">
-        <link rel="stylesheet" type="text/css" href="css/home-pages.css">
+        <link rel="stylesheet" type="text/css" href="css/main-showcase.css">
         <title>Transporter</title>
     </head>
     <body>
@@ -17,7 +17,7 @@
             <nav>
                 <div>
                     <a href="index.html">
-                        <img src="img/white-logo.svg">
+                        <img class="hover trans" src="img/white-logo.svg">
                     </a>
                 </div>
                 <div>
@@ -50,15 +50,15 @@
                 </div>
                 <div>
                     <input name="radio" id="radio3" type="radio">
-                    <label for="radio3">Damperli Tır TIR</label>
+                    <label for="radio3">Damperli TIR</label>
                 </div>
                 <div>
                     <input name="radio" id="radio4" type="radio">
                     <label for="radio4">Lowbed TIR</label>
                 </div>
-                <input class="entry size-16" list="cars" placeholder="Alım noktası">
-                <input class="entry size-16" list="cars" placeholder="Teslim noktası">
-                <datalist id="cars">
+                <input class="entry size-16" list="countrys" placeholder="Alım noktası">
+                <input class="entry size-16" list="countrys" placeholder="Teslim noktası">
+                <datalist id="countrys">
                     <option value="BMW">
                     <option value="Bentley">
                     <option value="Mercedes">
@@ -82,8 +82,53 @@
                     <button class="red-border-button">Sıfırla</button>
                 </div>
             </aside>
-            <section>
-                
+            <section class="showcase">
+                <article>
+                    <h2>Ana Vitrin</h2>
+                </article>
+                <div class="results">
+                    <article>
+                        <a id="open-link" class="black">
+                            <article class="hover trans card">
+                                <img src="" alt="İlan Resmi">
+                                <h3>İlan Başlığı (Yük)</h3>
+                                <div>
+                                    <p>Alış noktası</p>
+                                    <p>Teslim noktası</p>
+                                </div>
+                                <p>Tonaj</p>
+                                <p>Fiyat</p>
+                            </article>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section id="modal" class="modal">
+                <div id="modal-content" class="modal-content">
+                    <button id="close-button" class="close-button"><img src="img/remove (1).png"></button>
+                    <div>
+                        <article class="advert-img">
+                            <img src="" alt="İlan Resmi">
+                        </article>
+                        <article class="advert">
+                            <h2>İlan Başlığı (Yük)</h2>
+                            <h3>Alış noktası:</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio natus sed non</p>
+                            <h3>Teslim noktası:</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum unde aut nihil!</p>
+                            <h3>Tonaj:</h3>
+                            <p>lorem TON</p>
+                            <div class="buy">
+                                <p class="size-22 red"><strong>Fiyat ₺</strong></p>
+                                <button class="red-button white">İşi Al</button>
+                            </div>
+                        </article>
+                    </div>
+                    <article>
+                        <h3>iş Açıklaması</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime facere aspernatur eius deserunt corrupti ipsa expedita voluptas quo nisi. Fugiat fuga quasi unde delectus placeat sed cupiditate atque officia!</p>
+                    </article>
+                </div>
             </section>
         </main>
         <!-- Alt Bilgi Bölümü -->
@@ -128,6 +173,6 @@
                 </div>
             </div>
         </footer>
-        <script src="js/home-pages.js"></script>
+        <script src="js/main-showcase.js"></script>
     </body>
 </html>
