@@ -194,6 +194,9 @@ footer{
 .active {
     color: white;
 }
+.pointer{
+    cursor: pointer;
+}
 /* ************** */
 /*                */
 /* ************** */
