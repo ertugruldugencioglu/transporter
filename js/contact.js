@@ -4,4 +4,3 @@ function moveContacts(index) {
     }
     document.querySelector(".carousel").style.transform = `translateY(-${index * 25}%)`;
 }
-//*******************************/
