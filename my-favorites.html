@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/adverts.css">
+        <title>Transporter</title>
+    </head>
+    <body>
+        <header>
+            <!-- Navigasyon Menüsü -->
+            <nav>
+                <div>
+                    <a href="index.html">
+                        <img class="hover trans" src="img/white-logo.svg">
+                    </a>
+                </div>
+                <div>
+                    <ul class="nav-list">
+                        <li>
+                            <a class="l-red-link trans" href="adverts.html">İlanlar</a>
+                        </li>
+                        <li>
+                            <a class="l-red-link trans active" href="my-favorites.html">Favorilerim</a>
+                        </li>
+                        <li>
+                            <a class="l-red-link trans" href="my-works.html">İşlerim</a>
+                        </li>
+                        <li class="nav-item">
+                            <input class="nav-entry entry size-16 white" type="text" placeholder="Ara...">
+                            <button type="submit"><img src="img/search (1).png"></button>
+                        </li>
+                        <li class="nav-item">
+                            <button onclick="toggleDiv()"><img src="img/user (4).png" alt=""></button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="acoount-settings" class="account-settings center-text">
+                <button onclick="logOut()" class="l-red-link trans size-16">Çıkış Yap</button>
+            </div>
+            <!-- Filtre ve Sıralama Menüsü -->
+            <aside>
+                <h3 class="center-text">Filtrele</h3>
+                <div>
+                    <input name="radio" id="radio1" type="radio">
+                    <label for="radio1">Normal Açık TIR</label>
+                </div>
+                <div>
+                    <input name="radio" id="radio2" type="radio">
+                    <label for="radio2">Tenteli TIR</label>
+                </div>
+                <div>
+                    <input name="radio" id="radio3" type="radio">
+                    <label for="radio3">Damperli TIR</label>
+                </div>
+                <div>
+                    <input name="radio" id="radio4" type="radio">
+                    <label for="radio4">Lowbed TIR</label>
+                </div>
+                <hr>
+                <input class="entry size-16" list="countrys" placeholder="Alım noktası">
+                <input class="entry size-16" list="countrys" placeholder="Teslim noktası">
+                <datalist id="countrys">
+                    <option value="BMW">
+                    <option value="Bentley">
+                    <option value="Mercedes">
+                    <option value="Audi">
+                    <option value="Volkswagen">
+                </datalist>
+                <input class="entry size-16" type="number" min="0" placeholder="Min-tonaj">
+                <input class="entry size-16" type="number" min="1" placeholder="Max-tonaj">
+                <h3 class="center-text">Sırala</h3>
+                <select class="entry size-16">
+                    <option value="Varsayılan">Varsayılan</option>
+                    <option value="Varsayılan">Fiyata göre(önce en yüksek)</option>
+                    <option value="Varsayılan">Fiyata göre(önce en düşük)</option>
+                    <option value="Varsayılan">Tonaja göre(önce en yüksek)</option>
+                    <option value="Varsayılan">Tonaja göre(önce en düşük)</option>
+                    <option value="Varsayılan">Tarihe göre(önce en yeni)</option>
+                    <option value="Varsayılan">Tarihe göre(önce en eski)</option>
+                </select>
+                <div>
+                    <button class="red-button white">Getir</button>
+                    <button class="red-border-button">Sıfırla</button>
+                </div>
+            </aside>
+            <section class="showcase">
+                <article>
+                    <h2>Favorilerim</h2>
+                </article>
+                <div class="results">
+                    <article class="hover trans">
+                        <button class="add-favorite red-border-button"><img class="button-img" width="20px" src="img/love.png"></button>
+                        <a class="open-link" class="black">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="" alt="İlan Resmi">
+                                </div>
+                                <h3>İlan Başlığı (Yük)</h3>
+                                <p>Alış noktası</p>
+                                <p>Teslim noktası</p>
+                                <p>Kasa Tipi</p>
+                                <p>Tonaj</p>
+                                <p class="red"><strong>Fiyat ₺</strong></p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section id="modal" class="modal">
+                <div id="modal-content" class="modal-content">
+                    <button id="close-button" class="close-button"><img src="img/remove (1).png"></button>
+                    <div>
+                        <article class="advert-img">
+                            <img src="" alt="İlan Resmi">
+                        </article>
+                        <article class="advert">
+                            <h2>İlan Başlığı (Yük)</h2>
+                            <h3>Alış noktası:</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio natus sed non</p>
+                            <h3>Teslim noktası:</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum unde aut nihil!</p>
+                            <h3>Tonaj:</h3>
+                            <p>lorem TON</p>
+                            <div class="buy">
+                                <p class="size-22 red"><strong>Fiyat ₺</strong></p>
+                                <button class="red-button white pointer">İşi Al</button>
+                            </div>
+                        </article>
+                    </div>
+                    <article>
+                        <h3>iş Açıklaması</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime facere aspernatur eius deserunt corrupti ipsa expedita voluptas quo nisi. Fugiat fuga quasi unde delectus placeat sed cupiditate atque officia!</p>
+                    </article>
+                </div>
+            </section>
+            <button id="add-advert" class="red-button add-advert white pointer" onclick="">Yeni İlan<img width="20px" src="img/add.png"></button>
+        </main>
+        <!-- Alt Bilgi Bölümü -->
+        <footer>
+            <div>
+                <div class="footer-logo">
+                    <img width="130px" src="img/white-logo.svg">
+                </div>
+                <div class="footer-nav">
+                    <div>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item">
+                                <a class="l-red-link trans" href="index.html">Transporter</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a class="l-red-link trans" href="about.html">Hakkımızda</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a class="l-red-link trans" href="contact.html">İletişim</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a class="l-red-link trans" href="signup.html">Kayıt Ol</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a class="l-red-link trans" href="login.html">Giriş Yap</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div>
+                        <ul class="footer-contact-list">
+                            <li class="footer-nav-item">
+                                <p>Telefon: <a class="l-red-link trans" href="tel:+905537674887">0553 767 4887</a></p>
+                            </li>
+                            <li class="footer-nav-item">
+                                <p>E-posta: <a class="l-red-link trans" href="mailto:ertugruldugenci@gmail.com">ertugruldugenci@gmail.com</a></p>
+                            </li>
+                            <li class="footer-nav-item">
+                                <p>Adres: <a class="l-red-link trans" href="https://goo.gl/maps/Vhrjcgz8LrksXNNp6">Evliya Çelebi mah. Doruk sk. no:8 Tuzla/İstanbul</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/general.js"></script>
+    </body>
+</html>
