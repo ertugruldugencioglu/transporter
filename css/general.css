@@ -183,6 +183,7 @@ footer{
     box-sizing:border-box;
     width: 250px;
     resize: none;
+    border-color: rgb(103, 103, 103);
 }
 .nav-entry{
     border-style: none;
@@ -210,6 +211,9 @@ footer{
 }
 .active {
     color: white;
+}
+.hidden{
+    display: none;
 }
 .pointer{
     cursor: pointer;

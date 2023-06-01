@@ -11,7 +11,7 @@ var parsedUserData = JSON.parse(userData);
 var buy = document.getElementById("buy-button");
 
 if(parsedUserData.sector == "broker"){
-    buy.style.display = "none"
+    buy.style.display = 'none'
     addButton.style.display = 'flex'
     addButton.style.alignItems = 'center'
     addButton.style.gap = '8px'

@@ -47,16 +47,16 @@
                 <h2>Kayıt Ol</h2>
                 <article>
                     <form>
-                        <input id="name" class="entry size-16" type="text" placeholder="isim">
-                        <input id="surname" class="entry size-16" type="text" placeholder="Soyisim">
-                        <input id="e-mail" class="entry size-16" type="email" placeholder="E-posta">
-                        <input id="tel" class="entry size-16" type="tel" placeholder="Telefon">
-                        <input id="password" class="entry size-16" type="password" placeholder="Şifre">
-                        <input id="r-password" class="entry size-16" type="password" placeholder="Şifre Tekrar">
+                        <input id="name" class="entry size-16" type="text" placeholder="isim" required>
+                        <input id="surname" class="entry size-16" type="text" placeholder="Soyisim" required>
+                        <input id="e-mail" class="entry size-16" type="email" placeholder="E-posta" required>
+                        <input id="tel" class="entry size-16" type="tel" placeholder="Telefon" required>
+                        <input id="password" class="entry size-16" type="password" placeholder="Şifre" required>
+                        <input id="r-password" class="entry size-16" type="password" placeholder="Şifre Tekrar" required>
                         <div>
-                            <input type="radio" id="radio1" name="radio" value="transporter">
+                            <input type="radio" id="radio1" name="radio" value="transporter" required>
                             <label for="radio1">Araç sahibi</label>
-                            <input type="radio" id="radio2" name="radio" value="broker">
+                            <input type="radio" id="radio2" name="radio" value="broker" required>
                             <label for="radio2">Komisyoncu</label>
                         </div>
                         <input onclick="signUp()" class="red-button white pointer" type="submit" value="Kayıt Ol">
