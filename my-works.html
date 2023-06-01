@@ -123,9 +123,9 @@
                     </article>
                 </div>
             </section>
-            <section id="modal" class="modal">
-                <div id="modal-content" class="modal-content">
-                    <button id="close-button" class="close-button"><img src="img/remove (1).png"></button>
+            <section id="advert-modal" class="advert-modal">
+                <div class="advert-modal-content">
+                    <button id="advert-modal-close-button" class="close-button"><img src="img/remove (1).png"></button>
                     <div>
                         <article class="advert-img">
                             <img src="" alt="İlan Resmi">
@@ -138,6 +138,9 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum unde aut nihil!</p>
                             <h3>Tonaj:</h3>
                             <p>lorem TON</p>
+                            <div class="buy">
+                                <p class="size-22 red"><strong>Fiyat ₺</strong></p>
+                            </div>
                         </article>
                     </div>
                     <article>
@@ -146,7 +149,39 @@
                     </article>
                 </div>
             </section>
-            <button id="add-advert" class="red-button add-advert white pointer" onclick="">Yeni İlan<img width="20px" src="img/add.png"></button>
+            <button id="add-advert" class="red-button add-advert white pointer" onclick="addAdvert()">Yeni İlan<img width="20px" src="img/add.png"></button>
+            <section id="add-advert-modal" class="add-advert-modal">
+                <div class="add-advert-modal-content">
+                    <button id="add-advert-modal-close-button" class="close-button"><img src="img/remove (1).png"></button>
+                    <h2>İlan Ver</h2>
+                    <form class="add-advert-form">
+                        <article>
+                            <input class="entry pointer" type="file" accept="image/png, image/jpg, image/jpeg" value="Resim Seç">
+                            <div>
+                                <input class="entry size-16" type="text" placeholder="İlan Başlığı">
+                                <input class="entry size-16" type="number" placeholder="Tonaj" min="1">
+                                <input class="entry size-16" type="number" placeholder="Fiyat" min="1">
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <label>Alış Noktası:</label>
+                                <input class="entry size-16" type="text" placeholder="İl">
+                                <input class="entry size-16" type="text" placeholder="İlçe">
+                                <textarea class="entry size-16" rows="2" placeholder="Adres"></textarea>
+                            </div>
+                            <div>
+                                <label>Teslim Noktası:</label>
+                                <input class="entry size-16" type="text" placeholder="İl">
+                                <input class="entry size-16" type="text" placeholder="İlçe">
+                                <textarea class="entry size-16" rows="2" placeholder="Adres"></textarea>
+                            </div>
+                        </article>
+                        <textarea class="entry size-16" rows="2" placeholder="İlan Açıklaması"></textarea>
+                        <input class="red-button white" type="submit" value="Yayınla">
+                    </form>
+                </div>
+            </section>
         </main>
         <!-- Alt Bilgi Bölümü -->
         <footer>
