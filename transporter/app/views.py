@@ -63,7 +63,7 @@ def adverts():
     if request.cookies.get('user_email') == None:
         return redirect(url_for("login"))
     else:
-        if request.method == 'POST' and request.form.get('advertHeader') != '':
+        if request.method == 'POST':
             connection = sqlite3.connect("transporter.db")
             command = connection.cursor()
             command.execute("CREATE TABLE IF NOT EXISTS adverts(userEmail TEXT, header TEXT, truckType TEXT, tonnage TEXT, price TEXT, loadingLocation TEXT, loadingAdress TEXT, deliveryLocation TEXT, deliveryAdress TEXT, description TEXT)")

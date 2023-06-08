@@ -181,20 +181,25 @@
             <section class="showcase"> 
                 <h2>Vitrin</h2>
                 <div class="showcase-content">
-                    <article class="hover trans">
-                        <div class="card pointer">
-                            <img src="../static/img/jake-blucker-OJX7gIU3E6U-unsplash.jpg">
-                            <h3>İlan Başlığı</h3>
-                            <p>Kasa tipi</p>
-                            <div>
-                                <p>Alım</p>
-                                <p>Teslim</p>
+                    {% for card in cards %}
+                        <article class="hover trans">
+                            <div class="add-favorite">
+                                <button class="add-favorite-button" onclick="addFavorites()"><img id="add-favorite-img" src="../static/img/love (1).png"></button>
                             </div>
-                            <p>Tonaj</p>
-                            <p class="red"><strong>Fİyat₺</strong></p>
-                            <p class="right-text date">gg/aa/yyyy</p>
-                        </div>
-                    </article>
+                            <div class="card pointer">
+                                <img src="../static/img/jake-blucker-OJX7gIU3E6U-unsplash.jpg">
+                                <h3>{{card.header}}</h3>
+                                <p>{{card.truckType}}</p>
+                                <div>
+                                    <p>{{card.loadingLocation}}</p>
+                                    <p>{{card.deliveryLocation}}</p>
+                                </div>
+                                <p>{{card.tonnage}}</p>
+                                <p class="red"><strong>{{card.price}}₺</strong></p>
+                                <p class="right-text date">gg/aa/yyyy</p>
+                            </div>
+                        </article>
+                    {% endfor %}
                 </div>
             </section>
             <section id="details-modal" class="details-modal">
@@ -277,6 +282,9 @@
                             </div>
                         </article>
                         <textarea id="advert-description" class="big-entry size-16" rows="3" placeholder="İlan Açıklaması"></textarea>
+                        <article>
+                            <button class="red-button click pointer white" type="submit">Yayınla</button>
+                        </article>
                     </form>
                 </div>
             </section>
