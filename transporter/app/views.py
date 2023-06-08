@@ -58,12 +58,6 @@ def login():
                 response.set_cookie('user_email', i[0], expires=expires)
                 return response
     return render_template("login.html")
-# @app.route("/adverts/<user>")
-# def adverts(user):
-#     if user == request.cookies.get('user_email'):
-#         return render_template("adverts.html", user=user)
-#     else:
-#         return redirect(url_for("login"))
 @app.route("/adverts", methods=['POST', 'GET'])
 def adverts():
     if request.cookies.get('user_email') == None:
